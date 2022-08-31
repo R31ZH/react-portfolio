@@ -1,40 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta name="description" content="Web site created using create-react-app" />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Portfolio</title>
+</head>
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li>
+          <a class="animation" href="#project">Projects</a>
+        </li>
+        <li>
+          <a class="animation" href="#skills">Skills</a>
+        </li>
+        <li>
+          <a class="animation" href="2022 Resume.DOCX">Resume</a>
+        </li>
+        <li>
+          <a class="animation" href="#contact-me">Contact Me</a>
+        </li>
+      </ul>
+    </nav>
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
+    <div class="intro">
+      <h1 class="animation">Hello, I am
+        <span class="blue">Jeremiah</span>
+      </h1>
+      <img class="headerimg" src="./download (2).png" alt="picture of Jeremiah">
+      <p> I am currently attending UofA's Full Stack Web Development Bootcamp. As I work through the Bootcamp and
+        acquire new skills,
+        I am also looking for work as a software developer.</p>
+    </div>
+
+  </header>
+
+  <div id="project">
+    <section>
+      <h2 class="center">My <span class="blue"> Projects</span></h2>
+      <p> As I work through my course work, I will put my notable projects here that display my abilities and
+        understanding of computer science.
+      </p>
+      <div class="container">
+        <img class="project_imgs" src="Screenshot (100).png" alt="image of website">
+        <h4><a class="animation2" href="https://r31zh.github.io/Module1/" target="_blank">Project 1: Maintenance of
+            Horiseon website</h4></a>
+      </div>
+    </section>
+  </div>
+
+
+  <div id="skills">
+    <section>
+      <h2 class="center"><span class="white">My</span><span class="blue"> Skills</span></h2>
+      <div class="skillcenter">
+        <img class="resize big" src="https://icons.veryicon.com/png/o/application/skills-section/bootstrap-2.png"
+          alt="Bootstrap logo">
+
+        <img class="resize big"
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/1024px-HTML5_Badge.svg.png"
+          alt="HTML logo">
+
+        <img class="resize big"
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/240px-CSS3_logo.svg.png"
+          alt="CSS logo">
+
+        <img class="resize big"
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Git_icon.svg/1200px-Git_icon.svg.png"
+          alt="git logo">
+
+        <img class="resize big" src="https://www.w3schools.com/whatis/img_js.png" alt="javascript logo">
+      </div>
+    </section>
+  </div>
+
+
+  <div id="contact-me">
+    <section>
+      <h2 class="center">Contact <span class="blue"> Me</span></h2>
+      <div class="cardcenter">
+        <div class="box">
+          <img class="size" src="https://i.pinimg.com/736x/1b/22/fd/1b22fd858e93265a3a2fa2060cfc1219.jpg"
+            alt="Image of a letter">
+          <div>
+            <h3 class="contact animation2"><b><a href="mailto: jaguilar0047@gmail.com">Email</a></b></h3>
+          </div>
+        </div>
+
+        <div class="box">
+          <img class="size" src="https://brandlogos.net/wp-content/uploads/2016/06/linkedin-logo.png"
+            alt="LinkedIn logo">
+          <div>
+            <h3 class="contact animation2"><b><a href="https://www.linkedin.com/in/jeremiah-aguilar-082b7b15a/"
+                  target="_blank">LinkedIn</a></b></h3>
+          </div>
+        </div>
+
+        <div class="box">
+          <img class="size" src="https://icon-library.com/images/github-icon-png/github-icon-png-2.jpg"
+            alt="Github logo">
+          <div>
+            <h3 class="contact animation2"><b><a href="https://github.com/R31ZH" target="_blank">Github</a></b></h3>
+
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <div id="footer">
+    <footer>
+      <h2 class="center white">Thanks for reading!</h2>
+    </footer>
+  </div>
+</body>
+
 </html>
